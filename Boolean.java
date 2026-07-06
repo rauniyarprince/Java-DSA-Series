@@ -4,4 +4,4 @@ public class Main {
     boolean isFishTasty = false;    
     System.out.println(isJavaFun);
     System.out.println(isFishTasty);
-  }}
+  }
