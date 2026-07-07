@@ -11,4 +11,5 @@ class Geeks {
         // Autoboxing: int -> Integer
         list.add(25);
         System.out.println(list.get(0));
-    
+    }
+  }
