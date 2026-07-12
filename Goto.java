@@ -19,5 +19,9 @@ class GFG {
         }
             System.out.println("after label two");
         }
-            System.out.println("after l
+            System.out.println("after label one");
+        }
+    }
+} {
+  
 }
