@@ -26,6 +26,6 @@ class ReturnExample {
         int result = calculateSum(5, 10);
 
         // Print the result
-        System.out.println("Result: " + result);
+        System.ou
     }
 }
