@@ -1,0 +1,94 @@
+class Student {
+    int id;
+    String name;
+    int age;
+    double marks;
+
+    Student(int id, String name, int age, double marks) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.marks = marks;
+    }
+
+    void displayDetails() {
+        System.out.println("----------------------------");
+        System.out.println("ID      : " + id);
+        System.out.println("Name    : " + name);
+        System.out.println("Age     : " + age);
+        System.out.println("Marks   : " + marks);
+        System.out.println("Grade   : " + calculateGrade());
+    }
+
+    String calculateGrade() {
+        if (marks >= 90)
+            return "A+";
+        else if (marks >= 80)
+            return "A";
+        else if (marks >= 70)
+            return "B";
+        else if (marks >= 60)
+            return "C";
+        else
+            return "Fail";
+    }
+}
+
+public class StudentManagementSystem {
+
+    public static void main(String[] args) {
+
+        Student[] students = {
+                new Student(101, "Prince", 22, 92.5),
+                new Student(102, "Rahul", 21, 78.4),
+                new Student(103, "Aman", 23, 85.2),
+                new Student(104, "Riya", 20, 66.8),
+                new Student(105, "Sneha", 22, 58.3)
+        };
+
+        double totalMarks = 0;
+        Student topper = students[0];
+
+        System.out.println("===== STUDENT DETAILS =====");
+
+        for (Student s : students) {
+            s.displayDetails();
+            totalMarks += s.marks;
+
+            if (s.marks > topper.marks) {
+                topper = s;
+            }
+        }
+
+        double average = totalMarks / students.length;
+
+        System.out.println("\n===== REPORT =====");
+        System.out.println("Total Students : " + students.length);
+        System.out.println("Average Marks  : " + average);
+        System.out.println("Topper         : " + topper.name);
+        System.out.println("Highest Marks  : " + topper.marks);
+
+        System.out.println("\nStudents Scoring Above Average:");
+
+        for (Student s : students) {
+            if (s.marks > average) {
+                System.out.println(s.name + " - " + s.marks);
+            }
+        }
+
+        int passCount = 0;
+        int failCount = 0;
+
+        for (Student s : students) {
+            if (s.marks >= 60)
+                passCount++;
+            else
+                failCount++;
+        }
+
+        System.out.println("\nPass Students : " + passCount);
+        System.out.println("Fail Students : " + failCount);
+
+        System.out.println("\n===== End of Report =====");
+    }
+}
