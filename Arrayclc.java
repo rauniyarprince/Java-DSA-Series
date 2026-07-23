@@ -6,7 +6,9 @@ public public class Main {
     // Loop through the array and add each element to sum
     for (int i = 0; i < numbers.length; i++) {
       sum += numbers[i];
- 
+    }
+
+    System.out.println("The sum is: " + sum);
   }
 }
  {
