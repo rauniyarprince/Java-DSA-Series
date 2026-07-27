@@ -5,3 +5,6 @@ class Geeks {
     {
         final Geeks t = new Geeks();
         t.p = 30;
+        System.out.println(t.p);
+    }
+}
