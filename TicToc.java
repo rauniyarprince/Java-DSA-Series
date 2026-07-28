@@ -88,3 +88,34 @@ public class Geeks {
         while (winner == null) {
             int numInput;
 
+            try {
+                numInput = in.nextInt();
+
+                // Check range
+                if (!(numInput > 0 && numInput <= 9)) {
+                    System.out.println("Invalid input; re-enter slot number:");
+                    continue;
+                }
+
+                // Check if slot is available
+                if (board[numInput - 1].equals(String.valueOf(numInput))) {
+                    board[numInput - 1] = turn;
+
+                    // Toggle turn
+                    turn = turn.equals("X") ? "O" : "X";
+
+                    printBoard();
+                    winner = checkWinner();
+                } else {
+                    System.out.println("Slot already taken; re-enter slot number:");
+                }
+
+            } catch (InputMismatchException e) {
+                System.out.println("Invalid input; re-enter slot number:");
+                in.nextLine(); // Consume invalid input to prevent infinite loop
+            }
+        }
+
+        // Final result
+        if (winner.equalsIgnoreCase("draw")) {
+            System.out.println("It's a draw! Thanks for playing.");
