@@ -119,3 +119,10 @@ public class Geeks {
         // Final result
         if (winner.equalsIgnoreCase("draw")) {
             System.out.println("It's a draw! Thanks for playing.");
+        } else {
+            System.out.println("Congratulations! " + winner + "'s have won! Thanks for playing.");
+        }
+
+        in.close();
+    }
+}
