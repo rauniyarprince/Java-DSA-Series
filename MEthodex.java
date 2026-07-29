@@ -3,4 +3,12 @@ public public class Main {
     System.out.println(fname + " Refsnes");
   }
 
-  publi
+  public static void main(String[] args) {
+    myMethod("Liam");
+    myMethod("Jenny");
+    myMethod("Anja");
+  }
+}
+ {
+  
+}
