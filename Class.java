@@ -10,7 +10,8 @@ class Student {
 
 public class Main {
     public static void main(String[] args) {
-        intln(s1.id);
+        Student s1 = new Student(10, "Alice");
+        System.out.println(s1.id);
         System.out.println(s1.n);
     }
 }
