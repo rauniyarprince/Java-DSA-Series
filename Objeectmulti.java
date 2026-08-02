@@ -5,6 +5,4 @@ public class Main {
     Main myObj1 = new Main();
     Main myObj2 = new Main();
     System.out.println(myObj1.x);
-    System.out.println(myObj2.x);
-  }
-}
+  
