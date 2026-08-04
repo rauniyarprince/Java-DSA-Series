@@ -8,7 +8,10 @@ public class Main {
     } else {
       return end;
     }
+  }
 
-
-
-    
+  public static void main(String[] args) {
+    int result = sum(5, 10);
+    System.out.println(result);
+  }
+}
