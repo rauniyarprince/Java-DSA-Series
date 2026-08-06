@@ -4,8 +4,8 @@ public class Main {
   }
 
   public static void main(String[] args) {
-    myMethod("Liam");
-    myMethod("Jenny");
-    myMethod("Anja");
+    myMethod("pr");
+    myMethod("dp");
+    myMethod("ar");
   }
 }
