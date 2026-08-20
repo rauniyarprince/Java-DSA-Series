@@ -10,4 +10,9 @@ public class Main {
     // Anonymous class that overrides makeSound()
     Animal myAnimal = new Animal() {
       public void makeSound() {
-    
+        System.out.println("Woof woof");
+      }
+    };
+
+   
+}
