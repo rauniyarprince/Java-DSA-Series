@@ -10,10 +10,6 @@ public class GFG {
         String s3 = s1.concat(s2);
 
         // Print and display temporary combined string
-        System.out.println(s3);
-
-        String s4 = "Portal";
-        String s5 = s3.concat(s4);
-        System.out.println(s5);
+        Syst);
     }
 }
