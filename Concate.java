@@ -13,5 +13,7 @@ public class GFG {
         System.out.println(s3);
 
         String s4 = "Portal";
-        String 
+        String s5 = s3.concat(s4);
+        System.out.println(s5);
+    }
 }
