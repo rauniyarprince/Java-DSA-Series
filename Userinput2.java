@@ -16,4 +16,8 @@ class Main {
     // Output input by user
     System.out.println("Name: " + name);
     System.out.println("Age: " + age);
+    System.out.println("Salary: " + salary);
+  }
+} {
   
+}
