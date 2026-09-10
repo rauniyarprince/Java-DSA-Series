@@ -3,6 +3,7 @@ public class Geeks{
         String str = "GeeksforGeeks";
 
         System.out.println("Length: " + str.length());  
-        System.out.println("Uppercase: " + str.toUpperCase());2, 6));
+        System.out.println("Uppercase: " + str.toUpperCase());
+        System.out.println("Substring: " + str.substring(2, 6));
     }
 }
